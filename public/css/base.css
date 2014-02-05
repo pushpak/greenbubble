@@ -5,6 +5,10 @@ body {
 	background-color: #f0f0f0;
 }
 
+.navbar .navbar-brand {
+	padding-top: 3px;
+}
+
 .carousel-caption {
 	bottom: -30px;
 	left: 0;
