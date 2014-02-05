@@ -1,0 +1,33 @@
+body { 
+	padding-top: 70px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background-color: #f0f0f0;
+}
+
+.carousel-caption {
+	bottom: -30px;
+	left: 0;
+	right: 0;
+	color: black;
+	text-shadow: none;
+	font-size: 12px;
+}
+
+.page-header {
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.footer {
+	padding: 20px 0px 20px 0px;
+	background-color: #ebebeb; /* layer fill content */
+	-moz-box-shadow: inset 0 1px 0 rgba(210,208,208,.57); /* inner shadow */
+	-webkit-box-shadow: inset 0 1px 0 rgba(210,208,208,.57); /* inner shadow */
+	box-shadow: inset 0 1px 0 rgba(210,208,208,.57); /* inner shadow */
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.06) 0%, rgba(255,255,255,.06) 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,.06) 0%, rgba(255,255,255,.06) 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.06) 0%, rgba(255,255,255,.06) 100%); /* gradient overlay */
+	background-image: linear-gradient(bottom, rgba(0,0,0,.06) 0%, rgba(255,255,255,.06) 100%); /* gradient overlay */
+}

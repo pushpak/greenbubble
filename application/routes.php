@@ -32,9 +32,80 @@
 |
 */
 
-Route::get('/', function()
+View::name('layouts.default', 'layout');
+
+$layout = View::of('layout');
+
+
+/* HOME URI */
+Route::get('/', array('as' => 'home', function() use ($layout)
 {
-	return View::make('home.index');
+    return $layout->with('title', 'Home')->nest('content', 'home');
+
+}));
+
+/* PRODUCTS URI */
+Route::get('products/overview', function() use ($layout)
+{
+    return $layout->with('title', 'Market Overview')->nest('content', 'home');
+});
+
+Route::get('products/spirulina-turnkey', function() use ($layout)
+{
+    return $layout->with('title', 'Spirulina Turnkey')->nest('content', 'home');
+});
+
+/* TECHNOLOGY URI */
+Route::get('technology/overview', function() use ($layout)
+{
+    return $layout->with('title', 'Technology Overview')->nest('content', 'home');
+});
+
+Route::get('technology/algae-strain', function() use ($layout)
+{
+    return $layout->with('title', 'Algae Strain')->nest('content', 'home');
+});
+
+Route::get('technology/algae-cultivation', function() use ($layout)
+{
+    return $layout->with('title', 'Algae Cultivatiob')->nest('content', 'home');
+});
+
+Route::get('technology/harvesting-agitation', function() use ($layout)
+{
+    return $layout->with('title', 'Harvesting &amp; Agitation')->nest('content', 'home');
+});
+
+Route::get('technology/infrastructure', function() use ($layout)
+{
+    return $layout->with('title', 'Infrastructure')->nest('content', 'home');
+});
+
+/* GALLERY URI */
+Route::get('gallery', function() use ($layout)
+{
+    return $layout->with('title', 'Gallery')->nest('content', 'home');
+});
+
+/* COMPANY URI */
+Route::get('team', function() use ($layout)
+{
+    return $layout->with('title', 'Our Team')->nest('content', 'home');
+});
+
+Route::get('advisors-mentors', function() use ($layout)
+{
+    return $layout->with('title', 'Advisors &amp; Mentors')->nest('content', 'home');
+});
+
+Route::get('contact-us', function() use ($layout)
+{
+    return $layout->with('title', 'Contact Us')->nest('content', 'home');
+});
+
+Route::get('advantage', function() use ($layout)
+{
+    return $layout->with('title', 'Advantage')->nest('content', 'home');
 });
 
 /*
