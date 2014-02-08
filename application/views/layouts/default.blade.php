@@ -23,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body class="mtopsticky">
+  <body>
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -62,7 +62,7 @@
                 <li><a href="{{{ URL::to('/technology/infrastructure') }}}">Infrastructure</a></li>
               </ul>
             </li>
-            <li><a href="{{{ URL::to('/gallery') }}}">Gallery</a></li>
+            <!--<li><a href="{{{ URL::to('/gallery') }}}">Gallery</a></li>-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -75,22 +75,26 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+  
+  <!-- Wrap all page content here -->
+  <div id="wrap">
 
-  <div class="container">
-    {{ $content }}
+    <div class="container">
+      {{ $content }}
+    </div>
+
   </div>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <div id="footer" class="footer">
     <div class="container">
       <p class="pull-right"><a href="#">Back to top <span class="glyphicon glyphicon-arrow-up"></span></a></p>
       <p>&copy; 2014 GreenBubble AlgalWorks Pvt Ltd. All Rights Reserved.</p>
     </div>
-  </footer>
+  </div>
 	
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-	{{ HTML::script('js/base.js'); }}
   </body>
 </html>

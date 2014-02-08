@@ -5,28 +5,28 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          {{ HTML::image('img/home/algae.jpg', 'Algae', array('class' => 'center-block')); }}
+          {{ HTML::image('img/home/algae.jpg', 'Algae', array('class' => 'center-block img-rounded')); }}
           <div class="carousel-caption">
             <h3>Algae</h3>
             <p>Algae are prehistoric plant-like life forms, most of which use sun as the energy source. These algae range in size from 1 micro meter to over 60 meters. Algae form a vital link in the food chain, sustaining most of the marine and freshwater organisms.</p>
           </div>
         </div>
         <div class="item">
-          {{ HTML::image('img/home/emulating-nature.jpg', 'Emulating Nature', array('class' => 'center-block')); }}
+          {{ HTML::image('img/home/emulating-nature.jpg', 'Emulating Nature', array('class' => 'center-block img-rounded')); }}
           <div class="carousel-caption">
             <h3>Emulating Nature</h3>
             <p>Nature has mastered the art of growing algae - causing wild blooms and producing a major percentage of earth's oxygen. Nature has the ability to manipulate huge ecosystems using simple principles. GreenBubble learns from this mastery and follows in its foot steps. We at GreenBubble use nature to our advantage and take its help to successfully create a dependable technique of growing massive quantities of algae.</p>
           </div>
         </div>
         <div class="item">
-          {{ HTML::image('img/home/by-product.jpg', 'Specific By Product Utilization', array('class' => 'center-block')); }}
+          {{ HTML::image('img/home/by-product.jpg', 'Specific By Product Utilization', array('class' => 'center-block img-rounded')); }}
           <div class="carousel-caption">
             <h3>Specific By-product Utlization</h3>
             <p>Our processes use industrial and agricultural by-products. These products are selected through extensive study of various parameters, this study has helped us design a robust process to utilize waste and low cost by-products. The reason behind the use of these materials in our processes is two fold: 1) The low cost of these wastes/by-products. 2) The looming problems such as Peak Oil and peak phosphorus.</p>
           </div>
         </div>
         <div class="item">
-          {{ HTML::image('img/home/cost-advantage.jpg', 'Cost Advantage', array('class' => 'center-block')); }}
+          {{ HTML::image('img/home/cost-advantage.jpg', 'Cost Advantage', array('class' => 'center-block img-rounded')); }}
           <div class="carousel-caption">
             <h3>GreenBubble Cost Advantage</h3>
             <p>We at GreenBubble through continuous innovation, engineering pragmatism and vast experience have been able to get the cost of Cap-Ex and Op-ex to a such a bare minimum that even the elusive mass consumable market (fuel, protein etc) is economically viable. With our unique bottom-up approach and extreme fine tuning of core processes GreenBubble has cut costs to a small fraction of a standard raceway/Open pond.</p>

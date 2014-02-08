@@ -47,38 +47,38 @@ Route::get('/', array('as' => 'home', function() use ($layout)
 /* PRODUCTS URI */
 Route::get('products/overview', function() use ($layout)
 {
-    return $layout->with('title', 'Market Overview')->nest('content', 'home');
+    return $layout->with('title', 'Market Overview')->nest('content', 'products.overview');
 });
 
 Route::get('products/spirulina-turnkey', function() use ($layout)
 {
-    return $layout->with('title', 'Spirulina Turnkey')->nest('content', 'home');
+    return $layout->with('title', 'Spirulina Turnkey')->nest('content', 'products.spirulina');
 });
 
 /* TECHNOLOGY URI */
 Route::get('technology/overview', function() use ($layout)
 {
-    return $layout->with('title', 'Technology Overview')->nest('content', 'home');
+    return $layout->with('title', 'Technology Overview')->nest('content', 'technology.overview');
 });
 
 Route::get('technology/algae-strain', function() use ($layout)
 {
-    return $layout->with('title', 'Algae Strain')->nest('content', 'home');
+    return $layout->with('title', 'Algae Strain')->nest('content', 'technology.algae-strain');
 });
 
 Route::get('technology/algae-cultivation', function() use ($layout)
 {
-    return $layout->with('title', 'Algae Cultivatiob')->nest('content', 'home');
+    return $layout->with('title', 'Algae Cultivatiob')->nest('content', 'technology.algae-cultivation');
 });
 
 Route::get('technology/harvesting-agitation', function() use ($layout)
 {
-    return $layout->with('title', 'Harvesting &amp; Agitation')->nest('content', 'home');
+    return $layout->with('title', 'Harvesting &amp; Agitation')->nest('content', 'technology.harvesting-agitation');
 });
 
 Route::get('technology/infrastructure', function() use ($layout)
 {
-    return $layout->with('title', 'Infrastructure')->nest('content', 'home');
+    return $layout->with('title', 'Infrastructure')->nest('content', 'technology.infrastructure');
 });
 
 /* GALLERY URI */
@@ -90,22 +90,22 @@ Route::get('gallery', function() use ($layout)
 /* COMPANY URI */
 Route::get('team', function() use ($layout)
 {
-    return $layout->with('title', 'Our Team')->nest('content', 'home');
+    return $layout->with('title', 'Our Team')->nest('content', 'company.team');
 });
 
 Route::get('advisors-mentors', function() use ($layout)
 {
-    return $layout->with('title', 'Advisors &amp; Mentors')->nest('content', 'home');
+    return $layout->with('title', 'Advisors &amp; Mentors')->nest('content', 'company.advisors');
 });
 
 Route::get('contact-us', function() use ($layout)
 {
-    return $layout->with('title', 'Contact Us')->nest('content', 'home');
+    return $layout->with('title', 'Contact Us')->nest('content', 'company.contact-us');
 });
 
 Route::get('advantage', function() use ($layout)
 {
-    return $layout->with('title', 'Advantage')->nest('content', 'home');
+    return $layout->with('title', 'Advantage')->nest('content', 'advantage');
 });
 
 /*
